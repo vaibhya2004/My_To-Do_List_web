@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ebdada;
+  color: #bf6d6d;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+/* make the list items unselectable */
+
+h1 {
+  color: rgb(166, 5, 5);
+  font-size: 10re;
+  text-align: center;
+  opacity: 0.4;
+}
+
+form {
+  box-shadow: 0 4px 10px rgba(221, 170, 170, 0.1);
+  max-width: 100%;
+  width: 400px;
+  align-items: baseline;
+}
+.input-container {
+    display: flex;
+    align-items: center;
+  }
+
+.input {
+  border: none;
+  color: #7d7575;
+  font-size: 17px;
+  padding: 1rem 2rem;
+  display: block;
+  width: 100%;
+}
+#addButton {
+  padding: 17px;
+  border: none;
+  width: 19%;
+  background-color: #f5efef;
+  color: #9f9e9e;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  transition: 0.3s;
+}
+#addButton:hover {
+  background-color: #e5dcdc;
+}
+
+.input::placeholder {
+  font-size: 24px;
+  color: #d5d5d5;
+}
+
+.input:focus {
+  outline-color: rgb(179, 131, 226);
+}
+
+.todos {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.todos li {
+  border-top: 1px solid #e5e5e5;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+small {
+  color: #705858;
+  margin-top: 3rem;
+  text-align: center;
+}
